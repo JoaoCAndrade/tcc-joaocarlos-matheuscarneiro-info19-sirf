@@ -1,0 +1,25 @@
+/* FILTER BAR */
+
+.filter{
+    height: 48px;
+}
+
+.filter-btn{
+    height: 40px;
+}
+
+.filter-srch{
+    height: 30px;
+    font-size: 22px;
+    border-color: rgb(108, 108, 108);
+    background-color: rgb(108, 108, 108);
+    color: rgb(77, 77, 77);
+}
+
+.filter-txt{
+    font-size: 22px;
+}
+
+.filter-srch-margin{
+    margin-left: 235px;
+}

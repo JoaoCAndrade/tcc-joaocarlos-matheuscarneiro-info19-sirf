@@ -1,0 +1,100 @@
+/* BACKGROUND */
+
+.bg-image{
+    background-image: url(../resources/imgs/login-background-resized.png);
+    width: 1920px;
+    height: 1080px;
+}
+
+/* CONTAINER */
+
+.container{
+    padding: 0;
+}
+
+/* LOGO */
+
+.log-cont{
+    width: 27.605%;
+}
+
+.col-logo{
+    padding-left: 5%;
+}
+
+.logo{
+    height: 105px;
+}
+
+.logo-text{
+    padding-left: 10%;
+}
+
+/* LOGIN */
+
+.log-row{
+    padding: 50px;
+}
+
+.form-control{
+    width: 95%;
+}
+
+.lb-log{
+    justify-content: center;
+}
+
+.lb-log-bg{
+    background-color: rgb(217, 217, 217);   
+}
+
+.form-control::placeholder{
+    color: rgb(164, 164, 164);
+}
+
+.log-row{
+    padding-bottom: 32.5px;
+    padding-top: 32.5px;
+}
+
+.log-email-top-pad{
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+
+.log-senha-bot-pad{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.log-conf-senha-bot-pad{
+    padding-top: 5px;
+    padding-bottom: 40px;
+}
+
+.btn-log{
+    font-size: 22px;
+    width: 35%;
+    background-color: orange;
+}
+
+.log-btn{
+    padding-top: 0px;
+    padding-bottom: 40px;
+}
+
+.log-criar-cnt{
+    padding-top: 0;
+
+}
+
+.crt-cnt{
+    text-decoration: none;
+    font-size: 18px
+}
+
+.esq-sen{
+    text-decoration: none;
+    font-size: 16px;
+    padding-bottom: 60px;
+}

@@ -1,0 +1,133 @@
+/* BODY */
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* NAVBAR */
+
+@font-face {
+    font-family: 'league_gothicregular';
+    src: url('leaguegothic-regular-variablefont_wdth-webfont.woff2') format('woff2'),
+         url('leaguegothic-regular-variablefont_wdth-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.logo{
+    width: 75px;
+}
+.logo-text{
+    width: 290px;
+    height: 64px;
+}
+
+.nav-link{
+    font-family: 'league_gothicregular', 'Regular';
+    font-size: 36px;
+    color:rgb(180, 180, 180);
+    width: 202px;
+}
+
+.nav-link:hover{
+    background-color: rgb(41, 41, 41);
+    color: rgb(175, 175, 175);
+}
+
+.nav-item .active{
+    color: white !important;
+}
+
+.navbar{
+    background-color: rgb(38, 38, 38);
+}
+
+.log{
+    font-size: 30px;
+    padding-right: 85px;
+    margin-left: 675px;
+}
+
+.log:hover{
+    background-color: rgb(38, 38, 38);
+}
+
+#navbarNav{
+    width: 100%;
+}
+
+/* BACKGROUND COLORS */
+
+.bg-default{
+    background-color: rgb(41, 41, 41);
+}
+.bg-cnt{
+    background-color: rgb(51,51,51);
+}
+
+
+/* BUTTON COLORS */
+
+.btn{
+    background-color: rgb(48, 48, 48);
+}
+
+.btn:hover{
+    background-color: rgb(48, 48, 48);
+    color:white;
+}
+
+.btn[aria-pressed="true"]{
+    background-color: rgb(41, 41, 41);
+    color:white;
+    border-color: rgb(41,41,41);
+}
+
+/* SIZES */
+
+@media (min-width: 1920px){
+    .container{
+        max-width: 1800px;
+    }
+}
+
+.pre-tab{
+    margin: 0;
+    font-weight: bold;
+    height: 90px;
+}
+
+.pre-tab .col{
+    padding: 0;
+    border-right: 1px;
+    border-color:black;
+    font-size: 22px;
+}
+
+/* BORDER-RADIUS */
+.br-5{
+    border-radius: 5px;
+}
+
+.br-10{
+    border-radius: 10px;
+}
+
+.br-15{
+    border-radius: 15px;
+}
+
+.br-20{
+    border-radius: 20px;
+}
+
+.br-25{
+    border-radius: 25px;
+}
+
+/* TEXT COLORS */
+
+.txt-dft{
+    color:white;
+}
