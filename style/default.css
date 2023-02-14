@@ -17,7 +17,10 @@ body{
 
 .logo{
     width: 75px;
+    margin-left: 40px;
+    margin-right: 26px;
 }
+
 .logo-text{
     width: 290px;
     height: 64px;
@@ -64,6 +67,9 @@ body{
 }
 .bg-cnt{
     background-color: rgb(51,51,51);
+}
+.bg-cnt-wht{
+    background-color: rgb(65, 65, 65);
 }
 
 
@@ -124,6 +130,10 @@ body{
 
 .br-25{
     border-radius: 25px;
+}
+
+.br-50{
+    border-radius: 50px;
 }
 
 /* TEXT COLORS */

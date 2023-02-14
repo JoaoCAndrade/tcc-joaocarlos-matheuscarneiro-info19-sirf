@@ -25,13 +25,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav text-center">
                 <li class="nav-item active">
-                    <a class="nav-link active" href="#index">Inventário</a>
+                    <a class="nav-link active" href="#">Inventário</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Registros</a>
+                    <a class="nav-link" href="HTML/registros.html">Registros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Usuários</a>
+                    <a class="nav-link" href="HTML/usuarios.html">Usuários</a>
                 </li>
             </ul>
             <div class="container text-end">
@@ -61,9 +61,192 @@
                 </div>
             </div>
             <div class="col">
-                <button type="button" class="btn filter-btn-plus txt-dft">+</button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#plusModal" class="btn filter-btn-plus txt-dft">+</button>
             </div>
         </div>
+        <!--       -->
+        <!-- Modal -->
+        <div class="modal fade" id="plusModal" tabindex="-1" aria-labelledby="plusModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-default">
+                    <div class="modal-header" style="border:0">
+                        <h1 class="modal-title fs-7 txt-dft" id="plusModalLabel" style="padding-left: 34.5px">Item</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>  
+                    <div class="modal-body">
+                        <div class="container align-items-center justify-content-center">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <img src="../tcc-joaocarlos-matheuscarneiro-info19-sirf/resources/imgs/Debug.jpg" class="img-modal br-50">
+                                </div>
+                                <div class="col">
+                                    <!-- Getter -->
+                                    <script>
+                                        var nome="Teste", tipo="Ferramenta", qtde="1", desc="TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE", lastUser="ciclano@gmail.com", lastUlt="01/01/2022 18h40min";
+                                    </script>
+                                    <!--       -->
+                                    <!-- Infos -->
+                                    <div class="row bg-cnt br-5">
+                                        <div class="col">
+                                            <div class="txt-dft txt-mod text-center">Nome :</div>
+                                        </div>
+                                        <div class="col text-center txt-mod txt-dft">
+                                            <script type="text/javascript">document.write(nome);</script>
+                                        </div>
+                                    </div>
+                                    <div class="space-modal"></div>
+                                    <div class="row bg-cnt br-5">
+                                        <div class="col">
+                                            <div class="txt-dft txt-mod text-center">Tipo :</div>
+                                        </div>
+                                        <div class="col text-center txt-mod txt-dft">
+                                            <script type="text/javascript">document.write(tipo);</script>
+                                        </div>
+                                    </div>
+                                    <div class="space-modal"></div>
+                                    <div class="row bg-cnt br-5">
+                                        <div class="col">
+                                            <div class="txt-dft txt-mod">Quantidade:</div>
+                                        </div>
+                                        <div class="col txt-mod txt-dft">
+                                            <script type="text/javascript">document.write(qtde);</script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="height: 48px;"></div>
+                            <div class="row" style="padding-left:34.5px;">
+                                <div class="container bg-cnt br-5">
+                                    <div class="txt-dft mod-desc text-start">
+                                        Descrição:
+                                        <script type="text/javascript">
+                                            document.write(desc);
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="height: 48px;"></div>
+                            <div class="row" style="padding-left:34.5px;">
+                                <div class="container bg-cnt br-5">
+                                    <div class="txt-dft mod-lastUser text-start">
+                                        Último usuário:
+                                        <script type="text/javascript">
+                                            document.write(lastUser);
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="height: 48px;"></div>
+                            <div class="row" style="padding-left:34.5px;">
+                                <div class="container bg-cnt br-5">
+                                    <div class="txt-dft mod-lastUser text-start">
+                                        Última utilização:
+                                        <script type="text/javascript">
+                                            document.write(lastUlt);
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--      -->
+                        </div>  
+                    </div>
+                    <div class="modal-footer justify-content-center" style="border: 0;">
+                        <button type="button" data-bs-target="#modalEdit" data-bs-toggle="modal" class="btn txt-dft">Editar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalEdit" tabindex="-1" aria-labelledby="plusModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-default">
+                    <div class="modal-header" style="border:0">
+                        <h1 class="modal-title fs-7 txt-dft" id="plusModalLabel" style="padding-left: 34.5px">Item</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>  
+                    <div class="modal-body">
+                        <div class="container align-items-center justify-content-center">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <img src="../tcc-joaocarlos-matheuscarneiro-info19-sirf/resources/imgs/Debug.jpg" class="img-modal br-50">
+                                </div>
+                                <div class="col">
+                                    <!-- Getter -->
+                                    <script>
+                                        var nome="Teste", tipo="Ferramenta", qtde="1", desc="TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE", lastUser="ciclano@gmail.com", lastUlt="01/01/2022 18h40min";
+                                    </script>
+                                    <!--       -->
+                                    <!-- Infos -->
+                                    <div class="row bg-cnt br-5">
+                                        <div class="col">
+                                            <div class="txt-dft txt-mod text-center">Nome :</div>
+                                        </div>
+                                        <div class="col text-center txt-mod txt-dft">
+                                            <script type="text/javascript">document.write(nome);</script>
+                                        </div>
+                                    </div>
+                                    <div class="space-modal"></div>
+                                    <div class="row bg-cnt br-5">
+                                        <div class="col">
+                                            <div class="txt-dft txt-mod text-center">Tipo :</div>
+                                        </div>
+                                        <div class="col text-center txt-mod txt-dft">
+                                            <script type="text/javascript">document.write(tipo);</script>
+                                        </div>
+                                    </div>
+                                    <div class="space-modal"></div>
+                                    <div class="row bg-cnt br-5">
+                                        <div class="col">
+                                            <div class="txt-dft txt-mod">Quantidade:</div>
+                                        </div>
+                                        <div class="col txt-mod txt-dft">
+                                            <script type="text/javascript">document.write(qtde);</script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="height: 48px;"></div>
+                            <div class="row" style="padding-left:34.5px;">
+                                <div class="container bg-cnt br-5">
+                                    <div class="txt-dft mod-desc text-start">
+                                        Descrição:
+                                        <script type="text/javascript">
+                                            document.write(desc);
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="height: 48px;"></div>
+                            <div class="row" style="padding-left:34.5px;">
+                                <div class="container bg-cnt br-5">
+                                    <div class="txt-dft mod-lastUser text-start">
+                                        Último usuário:
+                                        <script type="text/javascript">
+                                            document.write(lastUser);
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="height: 48px;"></div>
+                            <div class="row" style="padding-left:34.5px;">
+                                <div class="container bg-cnt br-5">
+                                    <div class="txt-dft mod-lastUser text-start">
+                                        Última utilização:
+                                        <script type="text/javascript">
+                                            document.write(lastUlt);
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--      -->
+                        </div>  
+                    </div>
+                    <div class="modal-footer justify-content-center" style="border: 0;">
+                        <button type="button" data-bs-target="#modalEdit" data-bs-toggle="modal" class="btn txt-dft">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--           -->
         <div class="row" style="height: 22px;"></div>
         <!--Linha pré-tabela-->
         <div class="row bg-cnt br-5 align-items-center text-center pre-tab">
@@ -85,7 +268,6 @@
         </div>
         <!--Linha tabela-->
         <div class="row">
-            
         </div>
     </div>
 </body>

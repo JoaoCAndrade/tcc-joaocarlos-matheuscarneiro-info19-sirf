@@ -1,0 +1,13 @@
+/* BORDER */
+
+.border-right{
+    height: 100%;
+    border: 0;
+    border-right: 1px !important;
+    border-style: solid !important;
+    border-color: rgb(40,40,40) !important;
+}
+
+.txt-brd-right{
+    padding-top: 27.5px;
+}   
