@@ -25,17 +25,17 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav text-center">
                 <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Inventário</a>
+                    <a class="nav-link" href="../index.php">Inventário</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link active" href="#">Registros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="usuarios.html">Usuários</a>
+                    <a class="nav-link" href="usuarios.php">Usuários</a>
                 </li>
             </ul>
             <div class="container text-end">
-                <a class="nav-link log" href="login.html">Sair</a>
+                <a class="nav-link log" href="login.php">Sair</a>
             </div>
         </div>
     </nav>

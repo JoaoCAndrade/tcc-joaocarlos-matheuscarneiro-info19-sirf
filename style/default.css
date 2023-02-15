@@ -5,16 +5,6 @@ body{
 }
 
 /* NAVBAR */
-
-@font-face {
-    font-family: 'league_gothicregular';
-    src: url('leaguegothic-regular-variablefont_wdth-webfont.woff2') format('woff2'),
-         url('leaguegothic-regular-variablefont_wdth-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 .logo{
     width: 75px;
     margin-left: 40px;
