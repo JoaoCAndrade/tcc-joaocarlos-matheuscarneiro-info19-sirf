@@ -25,7 +25,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav text-center">
                 <li class="nav-item">
-                    <a class="nav-link" href="../index.php">Inventário</a>
+                    <a class="nav-link" href="../indexAdmin.php">Inventário</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="registros.php">Registros</a>
@@ -50,37 +50,77 @@
                 <div class="col border-right">
                     <div class="txt-dft txt-brd-right">Email</div>
                 </div>
-                
+                <div class="col border-right">
+                    <div class="txt-dft txt-brd-right">Permissão</div>
+                </div>
+                <div class='col-1'>
+                    <div style="text-decoration:none;font-size:22px" class='txt-dft'>Editar</div>
+                </div>
                 <div class="row" style="height: 22px;"></div>
                 <span style="padding:0;" id="tabelaUser"></span>
-                <script>
-                    async function createTabela(){
-                        var dados = await fetch("../src/tabelaUser.php");
+                <?php
+                    include_once "../src/conexao.php";
+                    $query_user = "SELECT id, email_user, nome_user, isEstagiario FROM user";
+                    $result_user = $conn->prepare($query_user);
+                    $result_user->execute();
+                    $listar_user = "";
 
-                        var resposta =await dados.json();
-
-                        console.log(resposta);
-
-                        if(!resposta['status']){
-                            document.getElementById('tabelaUser').innerHTML = resposta['msg'];
-                        }else{
-                            document.getElementById('tabelaUser').innerHTML = resposta['msg'];
+                
+                    if(($result_user) and ($result_user->rowCount() !=0)){
+                        while($row_user = $result_user->fetch(PDO::FETCH_ASSOC)){
+                            extract($row_user);
+                            
+                            if($row_user['isEstagiario']==1){
+                                echo "
+                                <div style='padding:0px;' class='row bg-cnt br-5 align-items-center text-center pre-tab'>
+                                    <div class='col border-right'>
+                                        <div class='txt-dft txt-brd-right'>"
+                                            .$nome_user.
+                                        "</div>
+                                    </div>
+                                    <div class='col border-right'>
+                                        <div class='txt-dft txt-brd-right'>"
+                                            .$email_user.
+                                        "</div>
+                                    </div>
+                                    <div class='col border-right'>
+                                        <div class='txt-dft txt-brd-right'>
+                                            Admin
+                                        </div>
+                                    </div>
+                                    <div class='col-1'>
+                                        <a class='txt-dft' style='text-decoration:none' href='editar.php?id=".$row_user['id']."'>Editar</a>;
+                                    </div>
+                                </div>";
+                            }else{
+                                echo "
+                                <div style='padding:0px;' class='row bg-cnt br-5 align-items-center text-center pre-tab'>
+                                    <div class='col border-right'>
+                                        <div class='txt-dft txt-brd-right'>"
+                                            .$nome_user.
+                                        "</div>
+                                    </div>
+                                    <div class='col border-right'>
+                                        <div class='txt-dft txt-brd-right'>"
+                                            .$email_user.
+                                        "</div>
+                                    </div>
+                                    <div class='col border-right'>
+                                        <div class='row'>
+                                            <div class='txt-dft txt-brd-right'>
+                                                Aluno
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='col-1'>
+                                        <a class='txt-dft' style='text-decoration:none' href='editar.php?id=".$row_user['id']."'>Editar</a>;
+                                    </div>
+                                </div>";
+                            }
+                            
                         }
                     }
-
-                    createTabela();
-                </script>
-                <!--
-                <div class="col border-right">
-                    <div class="txt-dft txt-brd-right">Última Visita</div>
-                </div>
-                <div class="col border-right">
-                    <div class="txt-dft txt-brd-right">Último uso</div>
-                </div>
-                <div class="col">
-                    <div class="txt-dft">Permissão</div>
-                </div>
-                -->
+                ?>    
             </div>
         </div>
     </div>

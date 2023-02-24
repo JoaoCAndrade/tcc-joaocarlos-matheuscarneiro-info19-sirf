@@ -20,8 +20,11 @@ logForm.addEventListener("submit", async (e) => {
 
         const resposta = await dados.json();
 
-        if(resposta['erro']){
-                msgAlertErroReg.innerHTML = resposta['msg'];
+        if(resposta['admin']){
+            window.location.href="../indexAdmin.php";
+        }
+        else if(resposta['erro']){
+            msgAlertErroReg.innerHTML = resposta['msg'];
         }else{
             window.location.href= "../index.php";
         }

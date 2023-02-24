@@ -41,9 +41,6 @@
                             $nome_categoria
                         </div>
                     </div>
-                    <div class='col-1'>
-                        <a class='txt-dft' style='text-decoration:none' href='pages/editarItem.php?id=".$row_item['id']."'>Editar</a>;
-                    </div>
                 </div>";
             }
             $retorna = ['status'=>true,'msg'=>$listar_item];
